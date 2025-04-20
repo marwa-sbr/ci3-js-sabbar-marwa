@@ -1,12 +1,12 @@
-let n = parseInt(prompt("Entrez le nombre de termes de la suite de Fibonacci à afficher :"));
+let n = parseInt(prompt("Entrez le nombre de termes de la suite de Fibonacci :"));
 
-if (isNaN(n) || n <= 0) {
-    console.log("Veuillez entrer un nombre valide et positif.");
-} else {
-    let fibo = [0, 1];
-    for (let i = 2; i < n; i++) {
-        fibo[i] = fibo[i - 1] + fibo[i - 2];
-    }
-    console.log("Les premiers " + n + " termes de la suite de Fibonacci sont :");
-    console.log(fibo.slice(0, n).join(", "));
-}
+let a = 0, b = 1;
+
+console.log("Suite de Fibonacci :");
+
+for (let i = 0; i < n; i++) {
+  console.log(a);
+  let suivant = a + b;
+  a = b;
+  b = suivant;
+};

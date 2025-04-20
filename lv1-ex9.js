@@ -1,4 +1,3 @@
-// Génère un nombre aléatoire entre 1 et 100
 let nombreAleatoire = Math.floor(Math.random() * 100) + 1;
 
 let devine = false;

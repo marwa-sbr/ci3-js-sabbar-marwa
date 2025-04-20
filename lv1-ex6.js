@@ -1,10 +1,17 @@
-let nombre = parseInt(prompt("Entrez un nombre"));
-if (isNaN(nombre)) {
-  console.log("Ce n'est pas un nombre valide.");
-} else if (nombre === 0) {
-  console.log("Le nombre est neutre.");
-} else if (nombre % 2 === 0) {
-  console.log("Le nombre est pair.");
-} else {
-  console.log("Le nombre est impaire.");
+const nombreSecret = Math.floor(Math.random() * 100) + 1;
+
+let devine = 0;
+
+while (devine !== nombreSecret) {
+  devine = parseInt(prompt("Devinez un nombre entre 1 et 100 :"));
+
+  if (devine < nombreSecret) {
+    alert("Trop petit !");
+  } else if (devine > nombreSecret) {
+    alert("Trop grand !");
+  } else if (devine === nombreSecret) {
+    alert("Bravo !");
+  } else {
+    alert("Veuillez entrer un nombre valide !");
+  }
 }
