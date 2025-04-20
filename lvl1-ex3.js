@@ -1,10 +1,12 @@
-function sum(a,b) {
-    return a + b;
-}
+let nombre1 = prompt("Entrez le premier nombre :");
+let nombre2 = prompt("Entrez le deuxième nombre :");
 
-let nombre = prompt ("Entrez vos nombres", 10,13);
+// Convertit les valeurs en nombres
+nombre1 = parseFloat(nombre1);
+nombre2 = parseFloat(nombre2);
 
-let result = sum (10,12);
-alert (result);
+// Calcule la somme
+let somme = nombre1 + nombre2;
 
-
+// Affiche le résultat dans la console
+console.log("La somme des deux nombres est : " + somme);
